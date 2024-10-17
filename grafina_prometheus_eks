@@ -91,3 +91,8 @@ sudo apt install trivy -y
 # Intalling Helm
 #! /bin/bash
 sudo snap install helm --classic
+
+==================
+ docker build -t pharma-appointment-app .
+ docker tag pharma-appointment-app 326319537952.dkr.ecr.us-east-1.amazonaws.com/pharma_ecr_repo:pharma-appointment-app
+ docker push 326319537952.dkr.ecr.us-east-1.amazonaws.com/pharma_ecr_repo:pharma-appointment-app

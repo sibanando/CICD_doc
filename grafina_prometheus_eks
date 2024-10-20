@@ -27,7 +27,7 @@ aws eks update-kubeconfig --region us-west-2 --name hackathon-k8s
 Delete Kubernetes cluster
 eksctl delete cluster --name hackathon-k8s --region us-west-2
 =========
-For Farget
+For Fargate
 ========
 eksctl create cluster --name demo-cluster --region us-east-1 --fargate
 eksctl delete cluster --name demo-cluster --region us-east-1

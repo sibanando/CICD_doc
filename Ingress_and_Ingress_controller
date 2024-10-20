@@ -57,10 +57,9 @@ eksctl create iamserviceaccount \
   --attach-policy-arn=arn:aws:iam::629702988416:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
   
-  
-eksctl create iamserviceaccount --cluster=hackathon-k8s --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::629702988416:policy/AWSLoadBalancerControllerIAMPolicy --approve --override-existing-serviceaccounts
-  
- 5. Deploy ALB controller
+eksctl create iamserviceaccount --cluster=hackathon-k8s --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::629702988416:policy/AWSLoadBalancerControllerIAMPolicy --approve --override-existing-serviceaccounts 
+
+5. Deploy ALB controller
  
  Add repo
  
